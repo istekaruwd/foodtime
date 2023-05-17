@@ -1,0 +1,593 @@
+/*
+Template Name: Food Time
+Template URI: 
+Author: CoderHut
+Author URI: 
+Version: 1.0
+Tags: 
+*/
+
+/*  ---------------------------------------------------------------------------
+    TAble Of Contents
+    ---------------------------------------------------------------------------
+
+*   01. GLobal Area
+*   02. Header Area / .header-area
+*   03. Hero Area / .hero-area
+*   04. Explore Area / .explore-area 
+*/
+
+/**
+*
+* ---------------------------------------------------------------------------
+# [Typography]
+
+# Body copy:            'Poppins', sans-serif
+# Heading:              'Merienda', cursive;
+# Input, textarea:      'Poppins', sans-serif
+# Links:                'Poppins', sans-serif
+
+* --------------------------------------------------------------------------- 
+*
+*/
+
+/*
+* ---------------------------------------------------------------------------
+* 01. GLobal Area
+* ---------------------------------------------------------------------------
+*/
+
+body {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    font-family: "Poppins", sans-serif;
+}
+html,
+body {
+    height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    line-height: 1.2;
+    font-family: "Merienda", cursive;
+}
+p {
+    margin-bottom: 15px;
+}
+a {
+    text-decoration: none;
+    transition: all 0.5s;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+iframe {
+    max-width: 100%;
+    border: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.media-right img,
+.media-left img {
+    max-width: inherit;
+}
+.owl-carousel .owl-item img {
+    width: auto;
+}
+::-webkit-input-placeholder {
+    color: inherit;
+}
+button {
+    border: 0;
+    background-color: transparent;
+}
+button:focus,
+input:focus {
+    outline: none;
+}
+
+/* Button */
+
+.tem-btn {
+    display: inline-block;
+    background-color: #396c03;
+    color: #fff;
+    font-size: 20px;
+    padding: 13px 49.5px;
+    border-radius: 225px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/*
+* ---------------------------------------------------------------------------
+* 02. Header Area / .header-area
+* ---------------------------------------------------------------------------
+*/
+
+.header-area {
+    background-color: rgba(107, 145, 66, 0.1);
+    border-bottom: 1px solid rgba(63, 63, 63, 0.2);
+    padding: 20.5px 0;
+}
+.hdr-logo a {
+    display: inline-block;
+}
+.hdr-logo a h1 {
+    color: #396c03;
+    font-weight: 700;
+    font-size: 28px;
+}
+.hdr-logo a h1 span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.hdr-nav ul#menu {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+.hdr-nav ul#menu li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 70px;
+}
+.hdr-nav ul#menu li:first-child {
+    margin-left: 0;
+}
+.hdr-nav ul#menu li a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #3f3f3f;
+}
+.mobile-nav .slicknav_menu .slicknav_nav li a i,
+.hdr-nav ul li a i {
+    margin-left: 5px;
+}
+.mobile-nav {
+    display: none;
+    margin-left: 30px;
+}
+.mobile-nav .slicknav_menu {
+    background-color: transparent;
+    position: relative;
+    z-index: 9999;
+}
+.mobile-nav .slicknav_menu .slicknav_nav {
+    background-color: #396c03;
+    position: absolute;
+    right: 0;
+    top: 79px;
+    width: 250px;
+}
+
+.login-cart {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.hdr-cart {
+    background-color: #396c03;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 23px;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+.hdr-cart span {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-weight: 700;
+    font-size: 16px;
+    height: 26px;
+    width: 26px;
+    text-align: center;
+    line-height: 26px;
+    background-color: #ff8b00;
+    border-radius: 50%;
+}
+
+/*
+* ---------------------------------------------------------------------------
+* 03. Hero Area / .hero-area
+* ---------------------------------------------------------------------------
+*/
+.hero-area {
+    background-color: rgba(107, 145, 66, 0.1);
+    padding: 116px 0;
+    background-image: url(../img/bg-left.png), url(../img/bg-right.png);
+    background-position: left -62px, right -62px;
+    background-repeat: no-repeat;
+}
+.hero-con h1 {
+    font-size: 65px;
+    color: #396c03;
+    line-height: 130%;
+    margin-bottom: 25px;
+}
+.hero-con p {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    color: #676767;
+    margin-bottom: 25px;
+}
+
+.hero-search form {
+    display: flex;
+    border: 2px solid rgba(57, 108, 3, 0.3);
+    border-radius: 120px;
+    align-items: center;
+    padding-left: 5px;
+}
+.hero-search span.marker {
+    height: 49px;
+    width: 49px;
+    text-align: center;
+    line-height: 49px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #FF8B00;
+    font-size: 22px;
+}
+.hero-search input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+    font-size: 22px;
+    color: #c7c7c7;
+}
+.hero-search .tem-btn i {
+    margin-right: 10px;
+}
+
+.food-img {
+    position: relative;
+}
+.left-food {
+    position: absolute;
+    left: -120px;
+    top: -52px;
+    z-index: 1;
+    animation: anima1 3s infinite ease-in-out;
+}
+@keyframes anima1 {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-5px) scale(1.05);
+    }
+    0% {
+      transform: translateY(0) scale(1);
+    } 
+}
+@keyframes anima3 {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-5px);
+    }
+    75% {
+      transform: translateY(5px);
+    }
+    0% {
+      transform: translateY(0);
+    }
+}
+.main-food {
+    position: relative;
+    z-index: 2;
+    animation: anima1 4s infinite ease-in-out;
+}
+.food-img-con {
+    position: absolute;
+    z-index: 3;
+    top: -75px;
+    left: 35%;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 100%);
+    backdrop-filter: blur(6px);
+    border-radius: 8.86914px;
+    text-align: center;
+    padding: 18px 29px;
+    animation: anima3 3s infinite ease-in-out;
+}
+.food-img-con h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    color: #FF8B00;
+}
+.food-img-con h3 i {
+    margin-right: 10px;
+}
+.food-img-con p {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 130%;
+    color: #838383;
+    margin: 3px 0 0;
+}
+
+/*
+* ---------------------------------------------------------------------------
+* 04. Explore Area / .explore-area
+* ---------------------------------------------------------------------------
+*/
+
+.explore-area {
+    padding: 50px 0;
+}
+.explore-con h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 130%;
+    color: #396c03;
+    margin-bottom: 10px;
+}
+.explore-con p {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #676767;
+}
+.explore-img {
+    position: relative;
+    overflow: hidden;
+    animation: anima1 5s infinite ease-in-out;
+}
+.explore-img-ani {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    animation: anima2 4s infinite ease-in-out;
+}
+@keyframes anima2 {
+    0% {
+        transform: translate(0% , -50%);
+    }
+    100% {
+        transform: translate(300%, -50%);
+    }
+}
+
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .hero-area {
+        background-image: none;
+    }
+    .hero-con h1 {
+        font-size: 46px;
+    }
+    .food-img-con h3 {
+        font-size: 20px;
+    }
+    .hero-con p {
+        font-size: 18px;
+    }
+    .food-img-con p {
+        font-size: 16px;
+    }
+    .tem-btn {
+        font-size: 14px;
+    }
+    .hero-search input {
+        font-size: 16px;
+    }
+    .hero-search span.marker {
+        height: 42px;
+        width: 42px;
+        line-height: 42px;
+        font-size: 18px;
+    }
+    .left-food {
+        position: absolute;
+        left: -140px;
+        top: -72px;
+    }
+    .hdr-cart {
+        margin-left: 10px;
+    }
+    .hdr-nav ul#menu li {
+        margin-left: 45px;
+    }
+    .hdr-logo a h1 {
+        font-size: 24px;
+    }
+    .explore-con h2 {
+        font-size: 34px;
+    }
+    .explore-con p {
+        font-size: 14px;
+    }
+}
+
+
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .hero-area {
+        background-image: none;
+    }
+    .hero-con h1 {
+        font-size: 46px;
+    }
+    .food-img-con h3 {
+        font-size: 20px;
+    }
+    .hero-con p {
+        font-size: 18px;
+    }
+    .food-img-con p {
+        font-size: 16px;
+    }
+    .tem-btn {
+        font-size: 14px;
+    }
+    .hero-search input {
+        font-size: 16px;
+    }
+    .hero-search span.marker {
+        height: 42px;
+        width: 42px;
+        line-height: 42px;
+        font-size: 18px;
+    }
+    .left-food {
+        position: absolute;
+        left: -140px;
+        top: -72px;
+    }
+    .hdr-cart {
+        margin-left: 10px;
+    }
+    .hdr-nav ul#menu li {
+        margin-left: 45px;
+    }
+    .hdr-logo a h1 {
+        font-size: 24px;
+    }
+    .explore-con h2 {
+        font-size: 34px;
+    }
+    .explore-con p {
+        font-size: 14px;
+    }
+    .explore-img {
+        animation: none;
+    }
+    .main-food {
+        text-align: right;
+    }
+    .left-food {
+        left: 10px;
+        top: -65px;
+    }
+    .hdr-nav #menu {
+        display: none;
+    }
+    .mobile-nav {
+        display: inline-block;
+    }
+
+}
+
+/* Extra small Device. */
+@media (max-width: 767px) {
+
+    .hero-area {
+        background-image: none;
+    }
+    .hero-con h1 {
+        font-size: 29px;
+    }
+    .food-img-con h3 {
+        font-size: 20px;
+    }
+    .hero-con p {
+        font-size: 14px;
+    }
+    .food-img-con p {
+        font-size: 14px;
+    }
+    .tem-btn {
+        font-size: 14px;
+        padding: 13px 20px;
+    }
+    .hero-search .tem-btn span {
+        display: none;
+    }
+    .hero-search .tem-btn i {
+        margin-right: 0;
+    }
+    .hero-search input {
+        font-size: 14px;
+    }
+    .hero-search span.marker {
+        height: 37px;
+        width: 37px;
+        line-height: 37px;
+        font-size: 16px;
+    }
+    .left-food {
+        position: absolute;
+        left: -140px;
+        top: -72px;
+    }
+    .hdr-cart {
+        margin-left: 10px;
+    }
+    .hdr-nav ul#menu li {
+        margin-left: 45px;
+    }
+    .hdr-logo a h1 {
+        font-size: 24px;
+    }
+    .explore-con h2 {
+        font-size: 29px;
+    }
+    .explore-con p {
+        font-size: 14px;
+    }
+    .explore-img {
+        animation: none;
+    }
+    .main-food {
+        text-align: right;
+    }
+    .left-food {
+        left: 10px;
+        top: -65px;
+    }
+    .explore-img-ani img {
+        height: 230px;
+    }
+    .left-food img {
+        height: 120px;
+    }
+    .main-food img {
+        height: 280px;
+    }
+    .food-img-con {
+        left: 42%;
+    }
+    .hdr-nav ul#menu {
+        display: none;
+    }
+    .mobile-nav {
+        display: inline-block;
+    }
+    .mobile-nav {
+        margin-left: 5px;
+    }
+    .login-cart .tem-btn {
+        display: none;
+    }
+ 
+}
